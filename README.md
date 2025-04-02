@@ -93,4 +93,7 @@ Implement PHP or Node.js to handle form submissions and reservations.
 SEO Optimization:
 
 Enhance visibility on search engines for better reach.
-![Uploading Ekran görüntüsü 2025-04-02 154507.png…]()
+
+
+
+(https://github.com/user-attachments/assets/d20536cc-d76a-44bb-8ebf-7f7b606f46be)
