@@ -1,0 +1,256 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-size: 16px;
+    font-family: "EB Garamond", serif;
+    font-optical-sizing: auto;
+  }
+  
+
+/* Header Kısmı */
+header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    position: fixed;
+    width: 100%;
+    background-color:  #30292983;
+    height: 4rem;
+    z-index: 1000;
+}
+
+.icon1{
+padding-right: 8px;
+}
+header h1{
+    color: #fff;
+margin: 4px 0px 0px 14px;
+padding: 10px 8px 10px 10px;
+}
+.yellow{
+    color: yellow;
+}
+/* Navbar */
+ul {
+    display: flex;
+    flex-direction: row;
+    padding: 10px 12px 10px 10px;
+    margin: 10px;
+    list-style-type: none;
+
+}
+
+li {
+    margin-left: 2rem;
+
+}
+
+.navbar {
+    text-decoration: none;
+    color: #fff;
+    font-size: 1.2rem;
+
+}
+/* Header İmage Kısmı Olacak */
+.header-image {
+    position: relative;
+    display: flex;
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(to right, rgba(0, 0, 0, 0.685) 0%, rgba(0, 0, 0, 0.001) 20%, rgba(0, 0, 0, 0.01) 80%, rgba(0, 0, 0, 0.685) 100%),
+                url('img/pexels-pixabay-258154.jpg') center/cover no-repeat;
+}
+
+.image-h1{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    color: #fff;
+    font-size: 2.2rem;
+    text-align: center;
+    padding: 20px;
+
+
+}
+.image-h1 p{
+    font-size: 2rem;
+    text-align: center;
+}
+/* buton */
+.header-buton{
+    margin-top: 20px;
+    background-color: rgb(2, 44, 83);
+    padding: 12px;
+    border: 1px rgb(2, 44, 83) solid;
+    border-radius: 7px;
+    color: #fff;
+    width: 130px;
+}
+.header-buton:hover{
+    background-color: rgba(2, 44, 83, 0.8);
+}
+/* Information kısmı */
+#main-Information {
+    display: flex;
+    justify-content: center; /* Yatayda ortalar */
+    align-items: center; /* Dikeyde ortalar */
+
+}
+
+.Information {
+    width: 25%;
+    text-align: center; /* Yazıları ortalar */
+}
+
+.Information h2, .Information p {
+    text-align: center;
+}
+/* İcon kısmı */
+.icons {
+    display: flex;
+    justify-content: center; /* Yatayda ortalar */
+    align-items: center; /* Dikeyde ortalar */
+    width: 80px;
+    height: 80px;
+    margin: 20px ;
+    color: #fff;
+    padding: 10px;
+    background-color: rgba(2, 44, 83, 0.8);
+    border: 3px solid rgba(2, 44, 83, 0.8);
+    border-radius: 70px; /* Yüksek yuvarlak köşeler için */
+    font-size: 3rem;
+}
+/* customer service kısmı */
+.Customer-CLS-img , .Customer-CLS-img-2{
+    width: 100%;
+    height: 450px;
+}
+.Customer-CLS , .Customer-CLS-2{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    background-color: #404040;
+    align-items: center;
+    margin: 20px auto 20px auto;
+    height: 450px;
+}
+.Customer-CLS-2{
+    background-color: rgb(52, 52, 250);
+}
+.Customer-CLS p , h1, a{
+    margin:30px;
+    color: white;
+}
+.Customer-CLS-2 p , h1, a{
+    margin:30px;
+    color: white;
+}
+.Customer-CLS a ,.Customer-CLS-2 a{
+    text-decoration: none;
+    color: white;
+    border: 1px solid white;
+    padding: 8px;
+    border-radius: 5px;
+    
+}
+/* img container kısmı */
+#contanier-text h1, #contanier-text p {
+    color: rgb(0, 0, 0);
+    text-align: center;
+}
+
+.img-container{
+    display: grid;
+    grid-template-columns: repeat(4,auto) ;
+    grid-template-rows: repeat(2,4fr);
+
+}
+.img-container img{
+    max-width: 100%;
+padding: 3px;
+}
+.img-container img:hover{
+    opacity: 0.8;
+}
+.container-text-2  {
+
+   background-color: #f3f3f3;
+    text-align: center;
+}
+.container-text-2 h1{
+    color: black;
+}
+
+/* ekip tanıtım kısmı */
+.people-container {
+    display: grid;
+    grid-template-columns: repeat(3, auto); 
+    grid-gap: 20px;
+    background-color: #f3f3f3;
+    padding: 20px;
+}
+
+.people-container img {
+    width: 100%;
+    max-width: 300px; 
+    height: 300px;
+    object-fit: cover;
+    border-radius: 50%;
+margin-left: 160px;
+}
+
+.people-container h1, 
+.people-container p {
+    color: black;
+    text-align: center;
+margin:10px 33% -10px 33%;
+}
+
+/* İletişim kurma kısmı */
+.form-container img{
+width: 100%;
+}
+
+.form-container{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    padding-top: 20px;
+    background-color: #f3f3f3;
+}
+
+.form-container form{
+    display: grid;
+    width: 95%;
+    height: 250px;
+    margin: 40px;
+    
+}
+.form-container input{
+    border: none;
+    padding: 10px;
+    margin-top: 20px;
+    
+}
+.contact-color{
+    color: black;
+    margin:auto auto 20px auto;
+    padding: 0;
+    
+}
+.form-container button{
+    margin-top: 20px;
+    color: white;
+    background-color: rgb(26, 93, 238);
+    border: 1px solid rgb(26, 93, 238);
+    border-radius: 5px;
+    width: 100px;
+    height: 35px;
+}
+.form-container button:hover{
+    opacity: 0.8 ;
+    transition: 0.2s;
+}
